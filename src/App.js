@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 
+const chara = 'abcdefghijklmnopqrstuvwxyz1234567890';
+
 class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +14,7 @@ class App extends React.Component {
   
   onClickButton = () => {
     this.setState({
-      skoot: "skooma",
+      skoot: chara[Math.floor(Math.random() * 36) + 1],
     });
     console.log(this.state.skoot);
   } 
