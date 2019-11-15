@@ -22,7 +22,7 @@
 }
 
 .button {
-  background-color: #1ef429;
+  background-color: #3af043;
   border: none;
   color: rgb(1, 31, 11);
   padding: 16px 32px;
@@ -34,4 +34,10 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
