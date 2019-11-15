@@ -13,8 +13,12 @@ class App extends React.Component {
   }
   
   onClickButton = () => {
+    var stringer = '';
+    for (var i = 0; i < 16; i++) {
+      stringer += chara[Math.floor(Math.random() * 35) + 1];
+    }
     this.setState({
-      skoot: chara[Math.floor(Math.random() * 36) + 1],
+      skoot: stringer,
     });
     console.log(this.state.skoot);
   } 
